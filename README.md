@@ -52,7 +52,7 @@ df.to_sql(li[1], conn, if_exists='replace', index=False)
 
 ```
 
-```sqlite
+```sql
 C:\Users\Public\Sakshi\sqlite>sqlite3
 SQLite version 3.17.0 2017-02-13 16:02:40
 Enter ".help" for usage hints.
