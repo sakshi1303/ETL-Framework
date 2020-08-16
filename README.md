@@ -10,6 +10,7 @@ Configurations Tables -
 
 Job Config Table - 
 
+```sql
 CREATE TABLE JOB_CONFIG(
 JOB_CONFIG_ID    	INT,
 JOB_ID           	INT,
@@ -24,6 +25,7 @@ JOB_DEPENDENCY_ID      	INT
 );
 
 INSERT INTO JOB_CONFIG VALUES(1, 1, 'TEST_EMP_STG_LOAD', 'EX', 'FILE', 'C:\Users\Public\Sakshi\ETL\Source\emp.csv', 'EMP_STG', 'emp_src.sql', 0, 0);
+```
 
 ```python
 
