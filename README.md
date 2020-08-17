@@ -24,7 +24,9 @@ JOB_DEPENDENCY_LEVEL   	INT,
 JOB_DEPENDENCY_ID      	INT
 );
 
-INSERT INTO JOB_CONFIG VALUES(1, 1, 'TEST_EMP_STG_LOAD', 'EX', 'FILE', 'C:\Users\Public\Sakshi\ETL\Source\emp.csv', 'EMP_STG', 'emp_src.sql', 0, 0);
+INSERT INTO JOB_CONFIG VALUES(1, 1, 'TEST_EMP_STG_LOAD', 'EX', 'FILE', 'C:\Users\Public\Sakshi\ETL\Source\emp.csv', 'EMP_STG', 'emp_src.csv', 0, 0);
+INSERT INTO JOB_CONFIG VALUES(2, 2, 'TEST_EMP_TRANSFORM', 'TR', 'FILE', 'C:\Users\Public\Sakshi\ETL\Trans\qry_emp_trans.sql', 'emp_tgt.csv', 'qry_emp_trans.sql', 1, 1);
+INSERT INTO JOB_CONFIG VALUES(3, 3, 'TEST_EMP_MAIN_LOAD', 'LD', 'FILE', 'C:\Users\Public\Sakshi\ETL\Trans\emp_tgt.csv', 'EMP', 'emp_tgt.csv', 2, 2);
 ```
 
 ```python
@@ -93,3 +95,5 @@ sqlite> select * from emp_stg;
 sqlite>
 
 ```
+Transform
+
