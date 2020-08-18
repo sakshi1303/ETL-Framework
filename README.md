@@ -97,3 +97,20 @@ sqlite>
 ```
 Transform
 
+
+
+Load
+
+```sql
+CREATE TABLE EMP
+( EMP_ID   	INT,
+  EMP_NAME 	CHAR(100),
+  EMP_AGE 	INT,
+  EMP_ADDRESS   CHAR(500),
+  EMAIL  	CHAR(100),
+  CONTACT_NO  	INT,
+  DEPT  	CHAR(20),
+  SALARY 	INT
+)
+
+```
