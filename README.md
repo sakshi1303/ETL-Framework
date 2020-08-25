@@ -130,25 +130,37 @@ JOB_TYPE_NAME CHAR(50)
 2 TR TRANSFORM
 3 LD LOAD
 
+CREATE TABLE JOB_DETAIL
+(
+JOB_ID               NUMBER,
+JOB_TYPE_ID          NUMBER,
+JOB_SCHEDULE         VARCHAR2(100)
+)
+
+1 1 00 09-18 * * 1-5 cmd 
+2 2 00 09-18 * * 1-5 cmd
+3 3 00 09-18 * * 1-5 cmd
+4 3 30 08 10 06 * cmd
+5 3 30 08 10 06 * cmd  
+6 1 30 08 10 06 * cmd 
+7 2 30 08 10 06 * cmd
+8 3 30 08 10 06 * cmd
+
 CREATE TABLE JOB_DEPENDENCY
 ( 
 JOB_ID               NUMBER,
-JOB_TYPE_ID          NUMBER,
-JOB_SCHEDULE         VARCHAR2(100),
-JOB_DEPENDENT_ID     NUMBER, 
-JOB_DEPENDENCY_LEVEL NUMBER 
+JOB_DEPENDENT_ID     NUMBER
 )
 
-
-1 1 00 09-18 * * 1-5 cmd 0 0
-2 2 00 09-18 * * 1-5 cmd 1 1
-3 3 00 09-18 * * 1-5 cmd 2 2
-4 3 30 08 10 06 * cmd    2 2
-5 3 30 08 10 06 * cmd    2 2
-6 1 30 08 10 06 * cmd    1 1
-7 2 30 08 10 06 * cmd    2 6
-7 2 30 08 10 06 * cmd    2 2
-8 3 30 08 10 06 * cmd    3 7
+1 0
+2 1
+3 2
+4 2
+5 2
+6 1
+7 6
+7 2
+8 7
 
 CREATE TABLE JOB_STATUS
 (
