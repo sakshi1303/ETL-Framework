@@ -150,6 +150,15 @@ PATH             VARCHAR2(100)
 7 2 C:\Users\Public\Sakshi\ETL\etl_extract.py
 8 3 C:\Users\Public\Sakshi\ETL\etl_load.py 
 
+INSERT INTO JOB_DETAIL VALUES(1, 1, 'C:\Users\Public\Sakshi\ETL\etl_extract.py');
+INSERT INTO JOB_DETAIL VALUES(2, 2, 'C:\Users\Public\Sakshi\ETL\etl_transform.py');
+INSERT INTO JOB_DETAIL VALUES(3, 3, 'C:\Users\Public\Sakshi\ETL\etl_load.py');
+INSERT INTO JOB_DETAIL VALUES(4, 1, 'C:\Users\Public\Sakshi\ETL\etl_extract.py');
+INSERT INTO JOB_DETAIL VALUES(5, 2, 'C:\Users\Public\Sakshi\ETL\etl_transform.py');
+INSERT INTO JOB_DETAIL VALUES(6, 3, 'C:\Users\Public\Sakshi\ETL\etl_load.py');
+INSERT INTO JOB_DETAIL VALUES(7, 1, 'C:\Users\Public\Sakshi\ETL\etl_extract.py');
+INSERT INTO JOB_DETAIL VALUES(8, 3, 'C:\Users\Public\Sakshi\ETL\etl_load.py');
+
 1 1 00 09-18 * * 1-5 cmd 
 2 2 00 09-18 * * 1-5 cmd
 3 3 00 09-18 * * 1-5 cmd
