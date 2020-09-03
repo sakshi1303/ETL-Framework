@@ -136,10 +136,19 @@ INSERT INTO JOB_TYPE VALUES(3, 'LD', 'LOAD');
 
 CREATE TABLE JOB_DETAIL
 (
-JOB_ID               NUMBER,
-JOB_TYPE_ID          NUMBER,
-JOB_SCHEDULE         VARCHAR2(100)
+JOB_ID           NUMBER,
+JOB_TYPE_ID      NUMBER,
+PATH             VARCHAR2(100)
 )
+
+1 1 C:\Users\Public\Sakshi\ETL\etl_extract.py
+2 2 C:\Users\Public\Sakshi\ETL\etl_transform.py
+3 3 C:\Users\Public\Sakshi\ETL\etl_load.py
+4 3 C:\Users\Public\Sakshi\ETL\etl_extract.py
+5 3 C:\Users\Public\Sakshi\ETL\etl_transform.py 
+6 1 C:\Users\Public\Sakshi\ETL\etl_load.py 
+7 2 C:\Users\Public\Sakshi\ETL\etl_extract.py
+8 3 C:\Users\Public\Sakshi\ETL\etl_load.py 
 
 1 1 00 09-18 * * 1-5 cmd 
 2 2 00 09-18 * * 1-5 cmd
